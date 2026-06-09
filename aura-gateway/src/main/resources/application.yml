@@ -1,0 +1,33 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: aura-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: credit_service_mcp
+          uri: lb://CREDIT-SERVICE  # <-- Dynamic lookup via Eureka!
+          predicates:
+            - Path=/credit/mcp/**
+          filters:
+            - StripPrefix=1
+
+        - id: document_service_rest
+          uri: lb://DOCUMENT-SERVICE # <-- Dynamic lookup via Eureka!
+          predicates:
+            - Path=/document/**
+#          filters:
+#            - StripPrefix=1
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    prefer-ip-address: true # <--- ADD THIS
+#      # Alternatively, you can force it to use localhost:
+#      # hostname: localhost
