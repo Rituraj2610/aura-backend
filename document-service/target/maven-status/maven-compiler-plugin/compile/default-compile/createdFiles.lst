@@ -1,0 +1,6 @@
+com\bank\aura\document\DocumentService.class
+com\bank\aura\document\strategy\OcrProcessingStrategy.class
+com\bank\aura\document\strategy\aws\AwsTextractStrategy.class
+com\bank\aura\document\strategy\local\LocalThreadOcrStrategy.class
+com\bank\aura\document\controller\DocumentIngestionController.class
+com\bank\aura\document\model\DocumentMetadata.class

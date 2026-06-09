@@ -1,0 +1,6 @@
+D:\aura-backend\document-service\src\main\java\com\bank\aura\document\controller\DocumentIngestionController.java
+D:\aura-backend\document-service\src\main\java\com\bank\aura\document\DocumentService.java
+D:\aura-backend\document-service\src\main\java\com\bank\aura\document\model\DocumentMetadata.java
+D:\aura-backend\document-service\src\main\java\com\bank\aura\document\strategy\aws\AwsTextractStrategy.java
+D:\aura-backend\document-service\src\main\java\com\bank\aura\document\strategy\local\LocalThreadOcrStrategy.java
+D:\aura-backend\document-service\src\main\java\com\bank\aura\document\strategy\OcrProcessingStrategy.java
