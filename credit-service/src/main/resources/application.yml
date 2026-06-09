@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: credit-service
+  ai:
+    mcp:
+      server:
+        protocol: STREAMABLE
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
