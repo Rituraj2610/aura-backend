@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: credit-service
+#  webflux:
+#    base-path: /credit
   ai:
     mcp:
       server:

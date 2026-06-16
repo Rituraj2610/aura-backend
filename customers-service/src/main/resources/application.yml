@@ -1,0 +1,40 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: customers-service
+  webflux:
+    base-path: /customers
+  ai:
+    mcp:
+      server:
+        protocol: STREAMABLE
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+#server:
+#  port: 8083
+#
+#spring:
+#  application:
+#    name: customers-service # Assigns a logical name to this application context for identification
+#  profiles:
+#    active: local # Activates the local processing profile; change this to 'aws' when migrating to the cloud
+#  ai:
+#    mcp:
+#      server:
+#        protocol: STREAMABLE
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    prefer-ip-address: true # <--- ADD THIS
+#      # Alternatively, you can force it to use localhost:
+#    # hostname: localhost

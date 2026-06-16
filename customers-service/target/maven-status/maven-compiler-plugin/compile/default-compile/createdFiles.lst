@@ -1,0 +1,4 @@
+com\bank\aura\customers\dto\KycRequest.class
+com\bank\aura\customers\dto\KycResponse.class
+com\bank\aura\customers\mcp\CustomerMcpTools.class
+com\bank\aura\customers\CustomersService.class

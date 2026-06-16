@@ -18,8 +18,13 @@ spring:
           uri: lb://DOCUMENT-SERVICE # <-- Dynamic lookup via Eureka!
           predicates:
             - Path=/document/**
+
+        - id: customers_service_mcp
+          uri: lb://CUSTOMERS-SERVICE
+          predicates:
+            - Path=/customers/mcp/**
 #          filters:
-#            - StripPrefix=1
+#            - StripPrefix=1 # Removes '/customer' so the service just intercepts '/mcp'
 
 eureka:
   client:
